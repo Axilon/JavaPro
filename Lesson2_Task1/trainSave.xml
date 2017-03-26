@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<trains>
+  <train id="1">
+    <from>Kiev</from>
+    <to>Moscow</to>
+    <date>2013-12-19</date>
+    <departure>16:37</departure>
+  </train>
+</trains>
