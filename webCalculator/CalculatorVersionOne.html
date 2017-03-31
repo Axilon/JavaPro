@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+        <form action="/calculator" method="post">
+            <strong>Enter your first number</strong><br>
+            <input type="number" maxlength="1000" name="firstNumber"><br>
+            <strong>Choose action</strong><br>
+            <select name="action">
+                <option value="addition">&#43;</option>
+                <option value="deduction">&#45;</option>
+                <option value="multiplication">&#215;</option>
+                <option value="division">&#247;</option>
+            </select>
+            <br>
+            <strong>Enter your second number</strong><br>
+            <input type="number" maxlength="1000" name="secondNumber"><br>
+            <input type="submit" value="Calculate">
+        </form>
+</body>
+</html>
