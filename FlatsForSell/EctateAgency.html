@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estate Agency</title>
+</head>
+<body topmargin="30" leftmargin="50" rightmargin="30" >
+<form action="/estateAgencyAddDeleteFlat"  method="post" >
+    <fieldset>
+        <legend><strong>Adding new flat</strong></legend>
+        <p>Enter the uniq description of the flat:
+            <input  type="text" name="discription" size="15"></p>
+        <p>Enter amount of rooms:
+            <input  type="text" name="roomAmount" size="5"></p>
+        <p>Enter the address:
+            <input  type="text" name="adress" size="15"></p>
+        <p>Enter the floor:
+            <input  type="text" name="floor" size="5" ></p>
+        <p>Enter the price:
+            <input  type="text"  name="price" size="10">
+            <input type="submit" value="Add"></p>
+    </fieldset>
+</form>
+
+<form action="/estateAgencyAddDeleteFlat" method="get">
+    <fieldset>
+        <legend><strong>Delete flat from base by description</strong></legend>
+        <p>Enter the uniq description:
+            <input type="text" name="discription">
+            <input type="submit" value="Delete"></p>
+    </fieldset>
+</form>
+
+<form action="/finding" method="post">
+    <fieldset>
+        <legend><strong>Find flat by description</strong></legend>
+        <p>Enter the uniq description:
+            <input type="text" name="discription">
+            <input type="submit" value="Find"></p>
+    </fieldset>
+</form>
+<form action="/finding" method="post">
+    <fieldset>
+        <legend><strong>Find flats by price</strong></legend>
+        <p>
+            Enter price from:
+            <input type="text" size="10" name="fromPrice" value="0">
+            to:
+            <input type="text" size="10" name="toPrice" value="0">
+            <input type="submit" value="Find">
+        </p>
+    </fieldset>
+</form>
+<form action="/finding" method="post">
+    <fieldset>
+        <legend><strong>Find flats by amount of rooms</strong></legend>
+        Enter amount of rooms from:
+        <input type="text" size="10" name="fromRoom" value="0">
+        to:
+        <input type="text" size="10" name="toRoom" value="0">
+        <input type="submit" value="Find">
+    </fieldset>
+</form>
+<p><strong> <a href="/estateAgency?a=baseOfFlats">Click</a> to get the
+    base of flats.</strong></p>
+
+
+
+</body>
+</html>
